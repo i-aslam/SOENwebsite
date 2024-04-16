@@ -1,0 +1,84 @@
+
+        <p>Log in successful</p>
+        
+        <h2>Have a pet to give away</h2>
+        
+        <form id="adoptionForm" action="/submitPet" method="post" onsubmit="return checkFormGive(event)">
+            <label for="petType">Cat or Dog:</label>
+            <select id="petType" name="petType">
+                <option value="">Select</option>
+                <option value="cat">Cat</option>
+                <option value="dog">Dog</option>
+            </select>
+            <br>
+            <label for="breed">Breed of Dog or Cat:</label>
+            <select id="breed" name="breed">
+                <option value="">Select</option>
+        
+        <option value="mixed">Mixed Breed</option>
+
+        <option value="persian">Persian</option> 
+        <option value="siamese">Siamese</option>
+        <option value="maine coon">Maine Coon</option>
+        <option value="ragdoll">Ragdoll</option>
+        <option value="bengal">Bengal</option>
+
+        <option value="labrador">Labrador Retriever</option>
+        <option value="german shepherd">German Shepherd</option>
+        <option value="golden retriever">Golden Retriever</option>
+        <option value="beagle">Beagle</option>
+        <option value="poodle">Poodle</option>
+            </select>
+            <br>
+            <label for="age">Age of Animal:</label>
+            <select id="age" name="age">
+                <option value="">Select</option>
+                <option value="puppy/kitten">Puppy/Kitten</option>
+                <option value="young">Young (1-3 years old)</option>
+                <option value="adult">Adult (4-8 years old)</option>
+                <option value="senior">Senior (8+ years old)</option>
+            </select>
+            <br>
+            <label for="gender">Animal Gender:</label>
+            <select id="gender" name="gender">
+                <option value="">Select</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+            <br>
+            <select id="getsAlongDogs" name="getsAlongDogs">
+                <option value="false">No</option>
+                <option value="true">Yes</option>
+            </select>
+            <label for="getsAlongDogs">Gets along with other dogs</label><br>
+
+            <select id="getsAlongCats" name="getsAlongCats">
+                <option value="false">No</option>
+                <option value="true">Yes</option>
+            </select>
+            <label for="getsAlongCats">Gets along with other cats</label><br>
+
+            <select id="suitableForChildren" name="suitableForChildren">
+                <option value="false">No</option>
+                <option value="true">Yes</option>
+            </select>
+            <label for="suitableForChildren">Suitable for a family with small children</label><br>
+
+            <br>
+            <label for="comment">Comment:</label><br>
+            <textarea id="comment" name="comment" rows="4" cols="50"></textarea><br>
+            <br>
+            <label for="ownerName">Owner's Name:</label>
+            <input type="text" id="ownerName" name="ownerName"><br>
+            <label for="ownerEmail">Owner's Email:</label>
+            <input type="email" id="ownerEmail" name="ownerEmail"><br>
+            <br>
+            <input type="submit" value="Submit">
+            <button type="button">Clear</button>
+        </form>
+        
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>

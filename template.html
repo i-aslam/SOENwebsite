@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Ikram Aslam">
+    <meta name="description" content="SOEN-287 Web Prog.">
+    <title>SOEN Website</title>
+    <style>
+
+        header {
+            background-color: #C4A484;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0; 
+        }
+
+        header img {
+            margin-right: 10px; 
+        }
+
+        .sidebar {
+            background-color: #ffffff;
+            color: #333;
+            width: 150px;
+            float: left; 
+            height: 100%; 
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        
+        .content {
+            margin-left: 150px; 
+            padding: 20px;
+            margin-bottom: 70px;
+        }
+    </style>
+
+
+<script>
+    setInterval(() => {
+        const currentDateTime = new Date().toLocaleString();
+        document.getElementById('LiveDateTime').textContent = currentDateTime;
+    }, 1000);
+
+    function validateAccountCreation() {
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+
+            // Regular expressions for username and password format
+            var usernameRegex = /^[a-zA-Z0-9]+$/;
+            var passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{4,}$/;
+
+            // Check if username and password match the format
+            if (!usernameRegex.test(username)) {
+                alert("Username can contain letters (both upper and lower case) and digits only.");
+                return false;
+            }
+            if (!passwordRegex.test(password)) {
+                alert("Password must be at least 4 characters long and contain at least one letter and one digit.");
+                return false;
+            }
+            return true;
+        }
+
+    function checkFormFind(event) {
+        var petType = document.getElementById("petType").value;
+        var breed = document.getElementById("breed").value;
+        var age = document.getElementById("age").value;
+        var gender = document.getElementById("gender").value;
+
+        if (petType === "" || breed === "" || age === "" || gender === "") {
+            alert("Please fill in all fields.");
+            event.preventDefault();
+        }
+    }
+
+    function checkFormGive(event) {
+        var petType = document.getElementById("petType").value;
+        var breed = document.getElementById("breed").value;
+        var age = document.getElementById("age").value;
+        var gender = document.getElementById("gender").value;
+        var ownerName = document.getElementById("ownerName").value;
+        var ownerEmail = document.getElementById("ownerEmail").value;
+        var comment = document.getElementById("comment").value;
+
+        var emailCheck = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        if (petType === "" || breed === "" || age === "" || gender === "" || ownerName === "" || ownerEmail === "" || comment === "") {
+            alert("Please fill in all fields.");
+            event.preventDefault(); 
+            return false;
+        }
+
+        if (!emailCheck.test(ownerEmail)) {
+            alert("Please enter a valid email address.");
+            event.preventDefault();
+            return false;
+        }
+
+        return true;
+    }
+
+</script>
+
+</head>
+
+<body>
+    <header>
+        <a href="/">
+            <img src="/logo.webp" alt="logo" style="width:130px;height:100px;">
+        </a>
+        <h1>Furry Animals Adoption</h1>
+        <div id="header">Current Date and Time: <span id="LiveDateTime"></span></div>
+    </header>
+    
+    <div class="sidebar">
+        <a href='/'><h3>Home Page</h3></a>
+        <a href='/find'><h3>Find a dog/cat</h3></a>
+        <a href='/dogcare'><h3>Dog Care</h3></a>
+        <a href='/catcare'><h3>Cat Care</h3></a>
+        <a href='/createaccount'><h3>Create An Account</h3></a>
+        <a href='/logIn'><h3>Login to Give Away a Pet</h3></a>
+        <a href='/logOut'><h3>Log out</h3></a>
+        <a href='/contact'><h3>Contact Us</h3></a>
+    </div>
+    
+    <div class="content">
+        {{content}}
+    </div>
+
+    <footer>
+        <a href='/disclaimer'><h3>Privacy/Disclaimer Statement</h3></a>
+    </footer>
+</body>
+</html>

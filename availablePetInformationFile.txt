@@ -1,0 +1,9 @@
+1:shu786:cat:bengal:adult:male:true:true:true:goodnew:me:fdfd@fdd.com
+2:shu786:cat:bengal:adult:male:true:true:true:goodnew:me:fdfd@fdd.com
+1:shu786:cat:siamese:young:male:false:true:false:new:hope:fdfd@fdd.com
+1:shu786:cat:persian:young:male:true:false:false:yes:ok:hgfj@gmail.com
+2:shu786:dog:persian:young:female:false:false:true:gdfgd:gf:hgfj@gmail.com
+3:shu786:dog:poodle:young:female:false:true:false:fdg:gfg:fdfd@fdd.com
+4:shu786:cat:mixed:young:female:false:false:false:vdfgf:gf:gfdgd@gmail.com
+5:shu786:cat:mixed:senior:male:false:false:false:we:df:fdfd@fdd.com
+1:ikramA:dog:golden retriever:puppy/kitten:male:true:false:true:great dog:Jimmy:jimmy@gmail.com

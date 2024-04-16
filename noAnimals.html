@@ -1,0 +1,79 @@
+<h2>No Animals Found</h2>
+<p>Sorry, no animals matched the criteria.</p>
+
+
+<h2>Find a dog/cat</h2>
+        
+<form id="petSearchForm" action="/findpet" method="post">
+    <label for="petType">Cat or Dog:</label>
+    <select id="petType" name="petType">
+        <option value="">Select</option>
+        <option value="cat">Cat</option>
+        <option value="dog">Dog</option>
+    </select>
+    <br>
+    <label for="breed">Breed of Dog or Cat:</label>
+    <select id="breed" name="breed">
+        <option value="">Select</option> 
+
+        <option value="mixed">Mixed Breed</option>
+
+        <option value="persian">Persian</option>
+        <option value="siamese">Siamese</option>
+        <option value="maine coon">Maine Coon</option>
+        <option value="ragdoll">Ragdoll</option>
+        <option value="bengal">Bengal</option>
+        <option value="labrador">Labrador Retriever</option>
+        <option value="german shepherd">German Shepherd</option>
+        <option value="golden retriever">Golden Retriever</option>
+        <option value="beagle">Beagle</option>
+        <option value="poodle">Poodle</option>
+    </select>
+    <br>
+    <label for="age">Preferred Age of Animal:</label>
+    <select id="age" name="age">
+        <option value="">Select</option>
+        <option value="any">Doesn't Matter</option>
+        <option value="puppy/kitten">Puppy/Kitten</option>
+        <option value="young">Young (1-3 years old)</option>
+        <option value="adult">Adult (4-8 years old)</option>
+        <option value="senior">Senior (8+ years old)</option>
+    </select>
+    <br>
+    <label for="gender">Preferred Gender:</label>
+    <select id="gender" name="gender">
+        <option value="">Select</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="any">Doesn't Matter</option>
+    </select>
+    <br>
+    <p>Compatibility:</p>
+    <select id="getsAlongDogs" name="getsAlongDogs">
+        <option value="false">No</option>
+        <option value="true">Yes</option>
+    </select>
+    <label for="getsAlongDogs">Gets along with other dogs</label><br>
+
+    <select id="getsAlongCats" name="getsAlongCats">
+        <option value="false">No</option>
+        <option value="true">Yes</option>
+    </select>
+    <label for="getsAlongCats">Gets along with other cats</label><br>
+
+    <select id="suitableForChildren" name="suitableForChildren">
+        <option value="false">No</option>
+        <option value="true">Yes</option>
+    </select>
+    <label for="suitableForChildren">Suitable for a family with small children</label><br>
+    <br>
+    <input type="submit" onclick="return checkFormFind(event)" value="Submit">
+    <button type="button">Clear</button>
+</form>
+
+<br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
