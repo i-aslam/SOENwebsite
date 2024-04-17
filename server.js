@@ -278,6 +278,4 @@ app.get('/loggingOut', requireLogin, (req, res) => {
 });
 
 
-app.listen(5590, () => {
-    console.log('Go to http://localhost:5590/');
-});
+module.exports = app;
